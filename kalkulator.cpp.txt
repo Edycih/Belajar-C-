@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main(){
+    float angka1,angka2,hasil;
+    char operasi;
+    cout<<"--Kalkulator--"<<endl;
+    cout<<"Pilih Operasi\ntambah(+)\nkurang(-)\nkali(*)\nbagi(/)"<<endl;
+    cout<<"Pilih Operasi:";
+    cin>>operasi;
+    cout<<"Masukan Angka Pertama:";
+    cin>>angka1;
+    cout<<"Masukan Angka Kedua:";
+    cin>>angka2;
+    
+    switch(operasi){
+        case '+':
+        hasil = angka1 + angka2;
+        break;
+        case '-':
+        hasil = angka1 - angka2;
+        break;
+        case '*':
+        hasil = angka1 * angka2;
+        break;
+        case '/':
+        if(angka2 == 0){
+            cout<<"Tidak Bisa Pembagian Dengan 0";
+            return 1;
+        }
+        hasil = angka1 / angka2;
+        break;
+        default:
+        cout<<"Operasi Tidak Valid";
+        return 1;
+    }
+    cout<<"Hasilnya Adalah "<<hasil;
+    return 0;
+}

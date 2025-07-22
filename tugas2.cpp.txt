@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int perkalian(int x,int y){
+    return x * y;
+}
+int pertambahan(int x,int y){
+    return x + y;
+}
+
+int pengurangan(int x,int y){
+    return x - y;
+}
+int pembagian(int x,int y){
+    return x / y;
+}
+void log(string operasi,int hasil){
+    cout<<"hasil "<<operasi<<" adalah "
+    <<hasil<<endl;
+}
+int main() {
+    int tambah1 = pertambahan(10,9);
+    int kurang1 = pengurangan(100,25);
+    int kali1 = perkalian(5,6);
+    int bagi1 = pembagian(50,10);
+    log("petambahan ",tambah1);
+    log("pengurangan ",kurang1);
+    log("perkalian ",kali1);
+    log("pembagian ",bagi1);
+    return 0;
+}

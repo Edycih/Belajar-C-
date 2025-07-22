@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string nama;
+    int nilai;
+    cout<<"masukan nama kamu: ";
+    getline(cin,nama);
+    cout<<"masukan nilai: ";
+    cin>>nilai;
+    cout<<endl;
+    cout<<"nama kamu "<<nama<<endl;
+    cout<<"nilai kamu "<<nilai<<endl;
+    
+    if(nilai >=80){
+        cout<<"nilai kamu melebihi kkm";
+    }else if(nilai >=70){
+            cout<<"nilai kamu sesuai kkm";
+    }else if(nilai >=100){
+        cout<<"anjir gila lu jenius";
+    }else{
+        cout<<"belajar lagi ya";
+    }
+    return 0;
+}

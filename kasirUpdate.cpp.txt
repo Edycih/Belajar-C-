@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+    string nama;
+    int JumlahBarang,harga,jumlah,total = 0;
+    
+    cout<<"--Kasir Upgrade--"<<endl;
+    cout<<"Mau Belanja Berapa Banyak Barang?\nJumlah Barang: ";
+    cin>>JumlahBarang;
+    cin.ignore();
+    
+    for(int i=0; i<JumlahBarang; i++){
+        cout<<"Barang Ke-"<<i+1<<endl;
+        cout<<"Nama Barang:";
+        getline(cin,nama);
+        
+        cout<<"Harga Barang:Rp.";
+        cin>>harga;
+        
+        cout<<"Jumlah Barang:";
+        cin>>jumlah;
+        cin.ignore();
+        
+        total += harga * jumlah;
+    }
+    cout<<"--------------------"<<endl;
+    cout<<"Total Semua Belanjaan:Rp."<<total;
+    return 0;
+}
